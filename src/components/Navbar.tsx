@@ -17,25 +17,25 @@ const Navbar = () => {
     const { setTheme } = useTheme()
 
     return (
-    <nav className="fixed inset-x-0 top-0 z-10 bg-opacity-90">
+    <nav className="fixed inset-x-0 top-0 z-10 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10">
         <div className="container px-4 md:px-6">
-            <div className="flex h-14 items-center">
+            <div className="flex h-16 items-center">
                 <div className="mr-auto flex items-center gap-2">
                     <Link href={"/"}>
-                        <span className="font-protest text-6xl md:text-7xl font-semibold">
+                        <span className="font-protest text-5xl md:text-6xl font-semibold">
                             ar
                         </span>
                     </Link>
                 </div>
                 <div className="ml-auto flex items-center space-x-4">
-                    <Link href="/">
-                        <Button variant="link" className="font-bold text-lg font-playfair">About</Button>
+                    <Link href="/aboutpage">
+                        <Button variant="link" className="font-bold text-lg">About</Button>
                     </Link>
                     <Link href="/">
-                        <Button variant="link" className="font-bold text-lg font-playfair">Project</Button>
+                        <Button variant="link" className="font-bold text-lg">Project</Button>
                     </Link>
                     <Link href="/">
-                        <Button variant="link" className="font-bold text-lg font-playfair">Contact</Button>
+                        <Button variant="link" className="font-bold text-lg">Contact</Button>
                     </Link>
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
